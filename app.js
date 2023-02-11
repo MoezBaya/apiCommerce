@@ -16,7 +16,7 @@ app.use(express.json());
 mongoose.set("strictQuery", false);
 
 // Connexion à la base données
-mongoose.connect(process.env.DB,{
+mongoose.connect(process.env.DBCloud,{
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
